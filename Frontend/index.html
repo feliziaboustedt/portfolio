@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Felizia portfolio</title>
+  </head>
+  <body>
+    <div id="app">
+    
+      <div class="navbar">
+      <nav>
+        <ul><li><a href="#contact-page">Kontakt</li><li><a href="#Verktyg">Verktyg</a></li><li><a href="">CV</a></li><li><a href="https://github.com/feliziaboustedt">GitHub</a></li></ul>
+      </nav>
+      </div>
+      
+      <section class="img-container">
+        <img
+        src="assets/1.jpg"
+        alt="självporträtt-av-Felizia"
+        class="picture"
+        />
+      </section>
+     
+      <div id="chatHolder">
+        <div id="messages"></div>
+      </div>
+      
+      <div class="next-page"><a href="#contact-page"><i class="fa-solid fa-circle-arrow-down"></i></a></div>
+
+      <div id="contact-page">
+        <div class="contact-text">
+        <span class="auto-type"></span>
+  
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+          var typed = new Typed(".auto-type", {
+            strings: [
+              "Your future Frontend Developer intern",
+              "Contact me -->",
+            ],
+            typeSpeed: 65,
+            loop: true,
+          });
+        </script>
+</div>
+        <div class="contact-form">
+        <form action="">
+          <label for="Company">Ange företag: </label>
+          <input type="text" class="companyName" required>
+          <label for="textBox">Fyll i ditt meddelande: </label>
+          <textarea name="textBox" class="textBox"></textarea>
+        </form>
+        <button type="submit" class="form-btn">Skicka</button>
+      </div>
+      </div>
+
+    </div>
+      </div >
+    <script type="module" src="/src/main.ts"></script>
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+  </body>
+</html>
