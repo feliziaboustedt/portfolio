@@ -100,9 +100,13 @@ height: 500px;
   border-radius: 50%;
 }
 
+.dev-tool-img{
+  width: 100%;
+}
+
 #contact-page {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -129,13 +133,14 @@ height: 500px;
    }
 }
 
-#contact-page {
-  display: grid;
-  grid-template-columns: auto auto;
+.contact-text {
+  width: 35rem;
 }
 
-.contact-text {
-  width: 700px;
+.contact-form{
+  display: flex;
+  justify-content: center;
+  width: 35rem;
 }
 
 .contact-form form{
@@ -148,7 +153,19 @@ height: 500px;
     font-size: 18px;
     color: #c2a0a0;
    }
+   .name{
+    width: 300px;
+    border-radius: 7px;
+    box-shadow: 1px 2px 2px rgb(211, 206, 206);
+    padding: 10px;
+   }
    .companyName {
+    width: 300px;
+    border-radius: 7px;
+    box-shadow: 1px 2px 2px rgb(211, 206, 206);
+    padding: 10px;
+   }
+   .e-mail {
     width: 300px;
     border-radius: 7px;
     box-shadow: 1px 2px 2px rgb(211, 206, 206);
@@ -182,4 +199,34 @@ height: 500px;
 .form-btn:hover {
   background-color: #c2a0a0;
   box-shadow: 1px 3px 3px rgb(211, 206, 206);
+}
+
+@media screen and (max-width: 700px) {
+  #messages {
+    width: 450px;
+    height: 500px;
+    }
+  .nav{
+    /* height: ; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .picture{
+    height: 150px;
+    width: 150px;
+  }
+  #contact-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 100px;
+  }
 }

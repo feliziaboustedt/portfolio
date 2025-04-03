@@ -12,7 +12,7 @@
     
       <div class="navbar">
       <nav>
-        <ul><li><a href="#contact-page">Kontakt</li><li><a href="#Verktyg">Verktyg</a></li><li><a href="">CV</a></li><li><a href="https://github.com/feliziaboustedt">GitHub</a></li></ul>
+        <ul><li><a href="#contact-page">Kontakt</li><li><a href="#dev-tools">Verktyg</a></li><li><a href="">CV</a></li><li><a href="https://github.com/feliziaboustedt">GitHub</a></li></ul>
       </nav>
       </div>
       
@@ -27,39 +27,47 @@
       <div id="chatHolder">
         <div id="messages"></div>
       </div>
-      
+
       <div class="next-page"><a href="#contact-page"><i class="fa-solid fa-circle-arrow-down"></i></a></div>
 
+      
       <div id="contact-page">
         <div class="contact-text">
-        <span class="auto-type"></span>
-  
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script>
-          var typed = new Typed(".auto-type", {
-            strings: [
-              "Your future Frontend Developer intern",
-              "Contact me -->",
-            ],
-            typeSpeed: 65,
-            loop: true,
-          });
-        </script>
+          <span class="auto-type"></span>
+          
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script>
+            var typed = new Typed(".auto-type", {
+              strings: [
+                "Your future Frontend Developer intern",
+                "Contact me -->",
+              ],
+              typeSpeed: 65,
+              loop: true,
+            });
+            </script>
 </div>
-        <div class="contact-form">
-        <form action="">
-          <label for="Company">Ange företag: </label>
-          <input type="text" class="companyName" required>
-          <label for="textBox">Fyll i ditt meddelande: </label>
-          <textarea name="textBox" class="textBox"></textarea>
-        </form>
-        <button type="submit" class="form-btn">Skicka</button>
-      </div>
-      </div>
+<div class="contact-form">
+  <form action="mailto:felizia.boustedt@hotmail.com" method="post" enctype="text/plain">
+    <label for="name">Namn: </label>
+    <input type="text" name="name" class="name">
+    <label for="Company">Ange företag: </label>
+    <input type="text" name="name" class="name">            
+    <label for="email">E-postadress: </label>
+    <input type="text" name="mail" class="e-mail">
+    <label for="textBox">Fyll i ditt meddelande: </label>
+    <input type="text" name="comment" size="45" class="textBox">
+    <input type="submit" value="Skicka" class="form-btn">
+  </form>
+  
+</div>
+</div>
 
-    </div>
-      </div >
+</div>
+<div id="dev-tools">
+  <img src="assets/Untitled design.png" alt="development-tools-icons" class="dev-tool-img">
+</div>
+</div >
     <script type="module" src="/src/main.ts"></script>
-    <!-- <script src="/socket.io/socket.io.js"></script> -->
   </body>
 </html>
